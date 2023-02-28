@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Hellix;
+  src: url('/public/fonts/Hellix-Regular.woff2');
+}
+@font-face {
+  font-family: Hellix Bold;
+  src: url('/public/fonts/Hellix-Bold.woff2');
+}
+@font-face {
+  font-family: Hellix Light;
+  src: url('/public/fonts/Hellix-Light.woff2');
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Hellix-Bold' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Hellix Bold' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

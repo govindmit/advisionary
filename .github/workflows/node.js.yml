@@ -20,22 +20,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
          
       - name: Detect package manager
         id: detect-package-manager
-        run: |
-         npm ci
-         npm run build 
-         
-      - name: List output files
-        run: find build/ -print
-         
+        run: 
+          yarn
+      - name: Build Creating
+        run: yarn build
+        
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-#           cache: ${{ steps.detect-package-manager.outputs.manager }}
  
       - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
@@ -43,10 +40,8 @@ jobs:
             username: ${{ secrets.FTP_USERNAME }}
             server: ${{ secrets.FTP_SERVER }}
             ssh_private_key: ${{ secrets.SSH_PUBLIC_KEY }}
-            port: ${{ secrets.FTP_PORT }}
-            password: ${{ secrets.FTP_PASSWORD }}
-            local_path: './build/'
+            local_path: './build/*'
             remote_path: '/var/www/html/advisionary'
-            sftp_only: true
+            sftpArgs: '-o ConnectTimeout=5'
 
   

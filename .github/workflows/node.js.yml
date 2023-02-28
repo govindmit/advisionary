@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: 🚚 Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
          
       - name: 🔨 Detect package manager
         id: detect-package-manager
@@ -28,16 +28,20 @@ jobs:
          npm install
       - name: Build Creating
         run: npm run build
+        
+      - name: List output files
+        run: ls
          
       - name: 🚚 Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
           cache: ${{ steps.detect-package-manager.outputs.manager }}
  
       - name: 📂 deploy file to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-#         uses: cypress-io/github-action@v2
+        uses: verbindingsfout/sftp-mirror@v1.6
+        #uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        #uses: cypress-io/github-action@v2
         with:
             username: ${{ secrets.FTP_USERNAME }}
             server: ${{ secrets.FTP_SERVER }}

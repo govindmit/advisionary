@@ -23,7 +23,7 @@ export const restrictedRoute = [
 
 
 
-const MainRoutes = ({}) => {
+const MainRoutes = () => {
   return (
     <BrowserRouter basename="/">
       <Routes>

@@ -21,16 +21,16 @@ jobs:
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v2
+        
+      - name: List output files
+        run: ls
          
       - name: 🔨 Detect package manager
         id: detect-package-manager
         run: 
          npm install
       - name: Build Creating
-        run: npm run build --prod
-        
-      - name: List output files
-        run: ls
+        run: npm run build
          
       - name: 🚚 Setup Node
         uses: actions/setup-node@v1

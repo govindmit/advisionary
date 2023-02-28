@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: 🚚 Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
          
       - name: 🔨 Detect package manager
         id: detect-package-manager
@@ -30,7 +30,7 @@ jobs:
         run: npm run build
          
       - name: 🚚 Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: ${{ steps.detect-package-manager.outputs.manager }}

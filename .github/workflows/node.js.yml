@@ -25,14 +25,9 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: 
-          yarn
+          npm install
       - name: Build Creating
-        run: yarn build
-        
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+        run: npm run build
  
       - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4

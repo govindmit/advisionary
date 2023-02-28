@@ -36,8 +36,8 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
  
       - name: 📂 deploy file to server
-#         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        uses: cypress-io/github-action@v2
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+#         uses: cypress-io/github-action@v2
         with:
             username: ${{ secrets.FTP_USERNAME }}
             server: ${{ secrets.FTP_SERVER }}

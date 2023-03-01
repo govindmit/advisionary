@@ -4,7 +4,7 @@ import Footer from "container/Footer";
 import React, { FC, useState } from "react";
 import Marquee from "react-fast-marquee";
 import PopupContent from "../../components/Popup/newsletter";
-
+import Multiacc from "../../components/according/accordingpro";
 export interface PageHomeProps {
   className?: string;
 }
@@ -33,100 +33,79 @@ function Popup() {
 const Home: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
-      style={{ backgroundImage: "url(/bg.png)" }}
+      style={{
+        background:
+          "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.2) 72%, rgba(0, 0, 0,1) 100%)",
+      }}
       className={`nc-HomePage h-full ${className}`}
       data-nc-id="HomePage"
     >
       <div
         style={{
-          backgroundImage: "url(/bg.png)",
+          background:
+            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
           backgroundPosition: "left",
-          height: "669px",
+          height: "100vh",
         }}
       >
         <Header />
         <div className="px-50 hero-banner relative">
-          <div>
-            <h1 className="text-7xl font-bold text-[#fff]">
+          <div className="w-2/3">
+            <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#fff]">
               Compliance Solutions
             </h1>
-            <h1 className="text-7xl font-bold text-[#4B8CCB] mb-3">
+            <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#9B7Ae4] mb-3">
               Putting You in Control
             </h1>
             <p className='text-[#FFFFFF75] "' style={{ fontSize: "16px" }}>
               Advisionary is a compliance consultancy firm that helps businesses
               in the payments, e-money, and crypto sectors ensure compliance
-            </p>
-            <p className='text-[#FFFFFF75] "' style={{ fontSize: "16px" }}>
               with relevant laws and regulations. Our team includes experienced
               consultants, entrepreneurs, lawyers, and former in-house
-              compliance experts.
+              compliance experts. We offer tailored, practical solutions to meet
+              the unique needs of our clients and stay up-to-date with the
+              latest developments in the compliance field. <br></br> Whether you
+              are a start-up or an established business, we are here to listen
+              to your ideas, ensure all your projects are complying with
+              regulations, <br></br>and support you on your journey to success.
             </p>
-            <p className='text-[#FFFFFF75] "' style={{ fontSize: "16px" }}>
-              We offer tailored, practical solutions to meet the unique needs of
-              our clients and stay up-to-date with the latest developments in
-              the compliance field. <br></br> Whether you are a start-up or an
-              established business, we are here to listen to your ideas, ensure
-              all your projects are complying with regulations, <br></br>and
-              support you on your journey to success.
-            </p>
+
             <ButtonPrimary className="mt-10 px-8 font-hellix-light">
               Get in touch
             </ButtonPrimary>
           </div>
           <img src="/images/bubble.svg" className="banner-bubble" />
+          <img src="/images/purple.png" className="banner-grad" />
         </div>
       </div>
-      <section className="what-we-do-section bg-black">
+      <section
+        className="what-we-do-section bg-black"
+        style={{
+          background:
+            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
+        }}
+      >
         <div className="px-32">
-          <div className="py-5">
-            <div className="pb-0.5 pt-3">
-              <h1 className="text-[#fff] font-bold text-6xl">What We Do</h1>
+          <div className="flex w-full py-20 flex-wrap">
+            <div className="w-96">
+              <div className="pb-2">
+                <span className="text-[#FFFFFF] font-hellix-light">
+                  Our Approach
+                </span>
+              </div>
+              <h2 className="text-[#FFFFFF] font-bold text-6xl">
+                The Risk base approach
+              </h2>
             </div>
-            <div className="pt-0 pb-10">
-              <span className="text-[#FFFFFF75] font-hellix-light">
-                Compliance as a service
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-12 flex justify-between ">
-            <div className="flex flex-col pr-16">
-              <div className="logo_sm mb-4">
-                <img src="/images/compliance-service.png" alt="service" />
-              </div>
-              <div className="mb-4">
-                <span className="text-[1.375rem] font-medium text-[#fff] font-hellix-light">
-                  Automated compliance solution{" "}
-                </span>
-              </div>
-              <div>
-                <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light">
-                  Unintentionally turned from an entrepreneur to a compliance
-                  expert? We take over your AML special department or the whole
-                  risk & compliance department.
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col pr-16">
-              <div className="logo_sm mb-4">
-                <img src="/images/compliance-platform.png" alt="compliance" />
-              </div>
-              <div className="mb-4">
-                <span className="text-[1.375rem] font-medium text-[#fff] font-hellix-light">
-                  Compliance shop
-                </span>
-              </div>
-              <div>
-                <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light">
-                  What if drafting your policies becomes as easy as one click?
-                  Directly redirection to our shop
-                </span>
+            <div className="w-full flex mt-8">
+              <div className="w-4/12"></div>
+              <div className="w-8/12">
+                <Multiacc />
               </div>
             </div>
           </div>
         </div>
-        <div className="what-we-do-bottom-bg-img-wrapper">
+        <div className="what-we-do-bottom-bg-img-wrapper bg-[#eee] pt-[37px]">
           <Marquee gradient={false} speed={60} direction={"right"}>
             <div>
               <h1 className="text-white text-7xl text-[76px]">
@@ -231,7 +210,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section> */}
-      <section className="linear-blue">
+      <section className="linear-purple">
         <div className="p-24 px-32">
           <div className="flex justify-between">
             <div>

@@ -49,7 +49,7 @@ class About extends React.Component<
             <div className="flex mt-12">
               <div>
                 <h1 className="text-7xl font-bold text-[#fff]">We Make</h1>
-                <h1 className="text-7xl font-bold text-[#4B8CCB]">
+                <h1 className="text-7xl font-bold text-[#9B7Ae4]">
                   Compliance Easy
                 </h1>
               </div>
@@ -58,7 +58,7 @@ class About extends React.Component<
         </section>
         <section style={{ height: "525.5px" }}>
           <div className="px-[7.875rem] py-[50px] mb-[12.5rem]">
-            <div className="linear-blue rounded-lg relative  overflow-hidden w-[100%] h-[437px] px-24 py-16">
+            <div className="linear-purple rounded-lg relative  overflow-hidden w-[100%] h-[437px] px-24 py-16">
               <img src="/images/h1_quotes.svg" className="h1_quotes" />
               <img
                 src="/images/image_sm_black_circle.svg"

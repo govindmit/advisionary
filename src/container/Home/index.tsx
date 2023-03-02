@@ -57,17 +57,20 @@ const Home: FC<PageHomeProps> = ({ className }) => {
             <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#9B7Ae4] mb-3">
               Putting You in Control
             </h1>
-            <p className='text-[#FFFFFF75] "' style={{ fontSize: "16px" }}>
+            <p
+              className='text-[#ccc] "'
+              style={{ fontSize: "18px", lineHeight: "34px" }}
+            >
               Advisionary is a compliance consultancy firm that helps businesses
               in the payments, e-money, and crypto sectors ensure compliance
               with relevant laws and regulations. Our team includes experienced
               consultants, entrepreneurs, lawyers, and former in-house
               compliance experts. We offer tailored, practical solutions to meet
               the unique needs of our clients and stay up-to-date with the
-              latest developments in the compliance field. <br></br> Whether you
-              are a start-up or an established business, we are here to listen
-              to your ideas, ensure all your projects are complying with
-              regulations, <br></br>and support you on your journey to success.
+              latest developments in the compliance field. Whether you are a
+              start-up or an established business, we are here to listen to your
+              ideas, ensure all your projects are complying with regulations,{" "}
+              <br></br>and support you on your journey to success.
             </p>
 
             <ButtonPrimary className="mt-10 px-8 font-hellix-light">
@@ -85,8 +88,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
             "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
         }}
       >
-        <div className="px-32">
-          <div className="flex w-full py-20 flex-wrap">
+        <div className="px-32 pb-[96px]">
+          <div className="flex w-full pt-20 flex-wrap">
             <div className="w-96">
               <div className="pb-2">
                 <span className="text-[#FFFFFF] font-hellix-light">
@@ -98,13 +101,13 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               </h2>
             </div>
             <div className="w-full flex mt-8">
-              <div className="w-12/12">
+              <div className="w-full">
                 <Multiacc />
               </div>
             </div>
           </div>
         </div>
-        <div className="what-we-do-bottom-bg-img-wrapper bg-[#eee] pt-[37px]">
+        <div className="what-we-do-bottom-bg-img-wrapper bg-[#eee] pt-[60px]">
           <Marquee gradient={false} speed={60} direction={"right"}>
             <div>
               <h1 className="text-white text-7xl text-[76px]">

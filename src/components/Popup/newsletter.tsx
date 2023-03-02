@@ -1,4 +1,4 @@
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 const CustomForm = ({ status, message, onValidated }) => {
   let email, fname, lname;
   const submit = () =>
@@ -9,16 +9,14 @@ const CustomForm = ({ status, message, onValidated }) => {
     onValidated({
       EMAIL: email.value,
       FNAME: fname.value,
-      LNAME: lname.value
+      LNAME: lname.value,
     });
 
   return (
     <div
       style={{
-        background: "#efefef",
-        borderRadius: 2,
-        padding: 10,
-        display: "inline-block"
+        display: "inline-block",
+        width: "100%",
       }}
     >
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
@@ -35,27 +33,68 @@ const CustomForm = ({ status, message, onValidated }) => {
         />
       )}
       <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={node => (fname = node)}
+        style={{
+          fontSize: "16px",
+          padding: 5,
+          width: "100%",
+          border: "1px solid #ccc",
+          height: "50px",
+          fontWeight: "600",
+          marginBottom: "10px",
+          fontFamily: "Hellix Light",
+          borderRadius: "5px",
+        }}
+        ref={(node) => (fname = node)}
         type="text"
         placeholder="First name"
       />
       <br />
       <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={node => (lname = node)}
+        style={{
+          fontSize: "16px",
+          padding: 5,
+          width: "100%",
+          border: "1px solid #ccc",
+          height: "50px",
+          fontWeight: "600",
+          marginBottom: "10px",
+          fontFamily: "Hellix Light",
+          borderRadius: "5px",
+        }}
+        ref={(node) => (lname = node)}
         type="text"
         placeholder="Last name"
       />
       <br />
       <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={node => (email = node)}
+        style={{
+          fontSize: "16px",
+          padding: 5,
+          width: "100%",
+          border: "1px solid #ccc",
+          height: "50px",
+          fontWeight: "600",
+          marginBottom: "10px",
+          fontFamily: "Hellix Light",
+          borderRadius: "5px",
+        }}
+        ref={(node) => (email = node)}
         type="email"
         placeholder="Your email"
       />
       <br />
-      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+      <button
+        style={{
+          fontSize: "18px",
+          padding: 5,
+          background: "#7b53e3",
+          color: "#fff",
+          width: "150px",
+          height: "50px",
+          marginTop: "15px",
+        }}
+        onClick={submit}
+      >
         Submit
       </button>
     </div>
@@ -70,24 +109,23 @@ function PopupContent({ onClose }) {
     >
       <div className="max-w-lg w-full m-auto bg-white absolute left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4 p-4 rounded-md text-left">
         <span className="flex justify-between mb-5">
-          <h2 className="text-2xl font-bold text-[#000]">
+          <h2 className="text-2xl font-bold text-[#7b53e3]">
             Newsletter Subscribe
           </h2>
           <button onClick={onClose}>X</button>
         </span>
         <div>
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={formData => subscribe(formData)}
-            />
-          )}
-        />
-      </div>
-    
+          <MailchimpSubscribe
+            url={url}
+            render={({ subscribe, status, message }) => (
+              <CustomForm
+                status={status}
+                message={message}
+                onValidated={(formData) => subscribe(formData)}
+              />
+            )}
+          />
+        </div>
       </div>
     </div>
   );

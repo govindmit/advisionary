@@ -16,6 +16,91 @@
     rgba(155, 122, 228, 1) 100%
   );
 }
+
+.main-grad {
+  background: #000
+    linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(16, 29, 66, 0.5) 35%,
+      rgba(49, 36, 77, 0.5) 65%,
+      rgb(0, 0, 0) 100%
+    )
+    center center;
+}
+
+.multi-accordion {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.btn_image {
+  width: 40%;
+  margin-top: 150px;
+  min-height: 530px;
+}
+
+.btn_title {
+  margin-top: 25px;
+}
+
+.btn_image .multi-accordion-header.flex.justify-between.active h2 {
+  color: #9b7ae4;
+}
+
+.btn_image.relative > div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 100%;
+  border: 3px solid;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+}
+.btn_image.relative > div.box-1 {
+  right: 60px;
+  top: 88px;
+  border-color: #ba0826;
+}
+.btn_image.relative > div.box-2 {
+  right: 60px;
+  top: 270px;
+  border-color: #ff761a;
+}
+
+.btn_image.relative > div.box-3 {
+  right: 159px;
+  top: 450px;
+  border-color: #293972;
+}
+.btn_image.relative > div.box-0 {
+  right: 150px;
+  top: -90px;
+  text-align: center;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+  border-color: #15ccea;
+}
+.btn_image .multi-accordion-header.flex.justify-between h2 {
+  padding: 0;
+  line-height: 55px;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn_image.relative > div > div {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn_title {
+  width: 60%;
+}
 .nc-HomePage {
   overflow: hidden;
 
@@ -86,6 +171,14 @@
   margin: 10px;
   width: 100%;
   outline: none;
+}
+
+.btn_image.relative span {
+  width: 100%;
+  display: inline-block;
+}
+.btn_image.relative span img {
+  width: 70%;
 }
 
 .appointment-form button {
@@ -276,7 +369,7 @@ textarea.placeholder-color::placeholder {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 
     h1 {
       text-transform: uppercase;

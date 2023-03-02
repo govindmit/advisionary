@@ -9,6 +9,26 @@ const MultiAccordion = ({ data }) => {
 
   return (
     <div className="multi-accordion">
+      <div className="btn_image">
+      {data.map((item, index) => (
+        <div
+          key={index}
+          className="multi-accordion-item mb-3 pb-3 border-b border-[#0c1829]"
+        >
+          <div
+            className={`multi-accordion-header flex justify-between ${
+              index === activeIndex ? "active" : ""
+            }`}
+            onClick={() => handleClick(index)}
+          >
+            <h2 className="mb-5 text-[#717171] text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
+              {item.btn}
+            </h2>
+          </div>
+        </div>
+      ))}
+      </div>
+      <div className="btn_title">
       {data.map((item, index) => (
         <div
           key={index}
@@ -32,7 +52,7 @@ const MultiAccordion = ({ data }) => {
             </div>
           )}
         </div>
-      ))}
+      ))}</div>
     </div>
   );
 };

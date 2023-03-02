@@ -1,4 +1,68 @@
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+const CustomForm = ({ status, message, onValidated }) => {
+  let email, fname, lname;
+  const submit = () =>
+    email &&
+    fname &&
+    lname &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value,
+      FNAME: fname.value,
+      LNAME: lname.value
+    });
+
+  return (
+    <div
+      style={{
+        background: "#efefef",
+        borderRadius: 2,
+        padding: 10,
+        display: "inline-block"
+      }}
+    >
+      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+      {status === "error" && (
+        <div
+          style={{ color: "red" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === "success" && (
+        <div
+          style={{ color: "green" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      <input
+        style={{ fontSize: "2em", padding: 5 }}
+        ref={node => (fname = node)}
+        type="text"
+        placeholder="First name"
+      />
+      <br />
+      <input
+        style={{ fontSize: "2em", padding: 5 }}
+        ref={node => (lname = node)}
+        type="text"
+        placeholder="Last name"
+      />
+      <br />
+      <input
+        style={{ fontSize: "2em", padding: 5 }}
+        ref={node => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <br />
+      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+        Submit
+      </button>
+    </div>
+  );
+};
 function PopupContent({ onClose }) {
+  const url = `https://gmail.us21.list-manage.com/subscribe/post?u=6ce689fc2ea60c873ccd1445f&id=33b5fd3433&f_id=001488e1f0`;
   return (
     <div
       className="popup-content fixed top-0 left-0 right-0 bottom-0"
@@ -11,36 +75,19 @@ function PopupContent({ onClose }) {
           </h2>
           <button onClick={onClose}>X</button>
         </span>
-        <form className="flex flex-col newsletter-form">
-          <div>
-            <input
-              className="border w-full mt-3 h-14 p-2"
-              type="text"
-              placeholder="Your Name"
+        <div>
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <CustomForm
+              status={status}
+              message={message}
+              onValidated={formData => subscribe(formData)}
             />
-          </div>
-          <div>
-            <input
-              className="border w-full mt-3 h-14 p-2"
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-          <div>
-            <input
-              className="border w-full mt-3 h-14 p-2"
-              type="text"
-              placeholder="Your email"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="mt-4 text-center p-4 font-hellix-light w-48 inline-block ttnc-ButtonPrimary rounded-md text-[#fff]"
-          >
-            Subscribe
-          </button>
-        </form>
+          )}
+        />
+      </div>
+    
       </div>
     </div>
   );

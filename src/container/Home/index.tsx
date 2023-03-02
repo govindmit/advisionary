@@ -3,7 +3,7 @@ import Header from "components/Layout/Header";
 import Footer from "container/Footer";
 import React, { FC, useState } from "react";
 import Marquee from "react-fast-marquee";
-import PopupContent from "../../components/Popup/newsletter";
+import MailchimpForm from "../../components/Popup/newsletter";
 import Multiacc from "../../components/according/accordingpro";
 export interface PageHomeProps {
   className?: string;
@@ -25,7 +25,7 @@ function Popup() {
         Subscribe
       </button>
 
-      {isOpen && <PopupContent onClose={togglePopup} />}
+      {isOpen && <MailchimpForm onClose={togglePopup} />}
     </div>
   );
 }
@@ -98,8 +98,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               </h2>
             </div>
             <div className="w-full flex mt-8">
-              <div className="w-4/12">vsdfjsd</div>
-              <div className="w-8/12">
+              <div className="w-12/12">
                 <Multiacc />
               </div>
             </div>

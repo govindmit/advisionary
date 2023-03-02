@@ -98,7 +98,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               </h2>
             </div>
             <div className="w-full flex mt-8">
-              <div className="w-4/12"></div>
+              <div className="w-4/12">vsdfjsd</div>
               <div className="w-8/12">
                 <Multiacc />
               </div>

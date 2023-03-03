@@ -3,9 +3,9 @@ import React, { FC } from "react";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footer-box">
       <div
-        className="px-[7.875rem] py-[50px] flex flex-col"
+        className="xl:px-12 2xl:px-[7.875rem] py-[50px] flex flex-col"
         style={{
           background:
             "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66, 0.3) 35%, rgba(49, 36, 77, 0.3) 65%, rgb(0, 0, 0) 100%)",
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className=" mb-4 text-[#fff]">
             <a
-              href="#"
+              href="mailto:Hello@advisionary.io "
               className="font-hellix-light"
               style={{ letterSpacing: "1px", fontWeight: "500" }}
             >
@@ -44,7 +44,7 @@ export default function Footer() {
             London - Portugal - Monaco
           </div>
           <div
-            className=" mb-10 text-[#fff] font-hellix-light w-[50%]"
+            className=" mb-10 text-[#fff] font-hellix-light w-full xl:w-[50%]"
             style={{ fontWeight: "500" }}
           >
             Advisionary Ltd is registered in the United Kingdom under No.
@@ -90,7 +90,7 @@ export default function Footer() {
           <div>
             <a href="#">
               <span className=" text-[#ffffff78]">
-                © 2022 Advisionary. All Rights reserved
+                © 2023 Advisionary. All Rights reserved
               </span>
             </a>
           </div>

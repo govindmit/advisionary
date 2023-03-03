@@ -12,24 +12,24 @@ const MultiAccordion = ({ data }) => {
       <div className="btn_image relative">
         <span>
           <img src="/images/OBJECTS.svg" className="" />
-        </span>
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className={`box-${index} multi-accordion-item mb-3 pb-3 absolute`}
-          >
+          {data.map((item, index) => (
             <div
-              className={`multi-accordion-header flex justify-between ${
-                index === activeIndex ? "active" : ""
-              }`}
-              onClick={() => handleClick(index)}
+              key={index}
+              className={`box-${index} multi-accordion-item mb-3 pb-3 absolute`}
             >
-              <h2 className="mb-5 text-[#717171] text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
-                {item.btn}
-              </h2>
+              <div
+                className={`multi-accordion-header flex justify-between ${
+                  index === activeIndex ? "active" : ""
+                }`}
+                onClick={() => handleClick(index)}
+              >
+                <h2 className="mb-5 text-[#717171] text-2xl xl:text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
+                  {item.btn}
+                </h2>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </span>
       </div>
       <div className="btn_title">
         {data.map((item, index) => (
@@ -43,7 +43,7 @@ const MultiAccordion = ({ data }) => {
               }`}
               onClick={() => handleClick(index)}
             >
-              <h2 className="mb-5 text-[#717171] text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
+              <h2 className="mb-5 text-[#717171] text-3xl xl:text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
                 {item.title}
               </h2>
             </div>

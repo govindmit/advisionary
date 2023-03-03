@@ -35,7 +35,7 @@
   width: 100%;
 }
 .btn_image {
-  width: 40%;
+  width: 50%;
   margin-top: 150px;
   min-height: 530px;
 }
@@ -48,7 +48,7 @@
   color: #9b7ae4;
 }
 
-.btn_image.relative > div {
+.btn_image.relative span > div {
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -61,25 +61,26 @@
   padding: 0;
   margin: 0;
 }
-.btn_image.relative > div.box-1 {
-  right: 60px;
-  top: 88px;
+.btn_image.relative span > div.box-1 {
+  right: -100px;
+  top: 51px;
   border-color: #ba0826;
 }
-.btn_image.relative > div.box-2 {
-  right: 60px;
-  top: 270px;
+.btn_image.relative span > div.box-2 {
+  right: -100px;
+  top: 220px;
   border-color: #ff761a;
 }
 
-.btn_image.relative > div.box-3 {
-  right: 159px;
-  top: 450px;
+.btn_image.relative span > div.box-3 {
+  right: -34px;
+  top: auto;
   border-color: #293972;
+  bottom: -90px;
 }
-.btn_image.relative > div.box-0 {
-  right: 150px;
-  top: -90px;
+.btn_image.relative span > div.box-0 {
+  right: -22px;
+  top: -100px;
   text-align: center;
   line-height: 100px;
   padding: 0;
@@ -93,13 +94,14 @@
   color: #000;
 }
 
-.btn_image.relative > div > div {
+.btn_image.relative span > div > div {
   width: 100%;
   display: inline-block;
 }
 
 .btn_title {
   width: 60%;
+  padding-left: 35px;
 }
 .nc-HomePage {
   overflow: hidden;
@@ -174,11 +176,12 @@
 }
 
 .btn_image.relative span {
-  width: 100%;
+  width: 380px;
   display: inline-block;
+  position: relative;
 }
 .btn_image.relative span img {
-  width: 70%;
+  width: 380px;
 }
 
 .appointment-form button {
@@ -286,9 +289,9 @@ textarea.placeholder-color::placeholder {
 }
 .contact_submit_btn {
   background: linear-gradient(
-    100.69deg,
-    #4b8ccb -1.65%,
-    #65bbd0 118.12%
+    128deg,
+    rgba(90, 74, 177, 1) 0%,
+    rgba(155, 122, 228, 1) 100%
   ) !important;
 }
 .bg-modal {
@@ -389,5 +392,121 @@ textarea.placeholder-color::placeholder {
         -webkit-text-stroke-color: rgba(255, 255, 255, 0.38);
       }
     }
+  }
+}
+
+.services {
+  display: flex;
+  padding: 0 7.875rem;
+  gap: 30px;
+}
+
+.services .container.m-auto {
+  height: 100%;
+}
+.services .container.m-auto > div {
+  height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .nc-HomePage .hero-banner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .services {
+    display: flex;
+    padding: 0 3rem;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nc-HomePage .hero-banner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+
+  .nc-HomePage .banner-bubble {
+    display: none;
+  }
+
+  .hero-banner h1 {
+    line-height: normal;
+    font-size: 20px;
+  }
+  section {
+    padding: 0 1rem;
+  }
+
+  .what-we-do-section.bg-black {
+    padding: 0;
+  }
+
+  .what-we-do-section.bg-black > div:first-child {
+    padding: 0 1rem;
+  }
+
+  .linear-purple > div {
+    padding: 25px 0 0px;
+  }
+
+  .btn_image {
+    display: none;
+  }
+
+  .btn_title {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .appointment-form input {
+    margin: 10px 0;
+  }
+
+  .appointment-form textarea {
+    margin: 10px 0;
+  }
+
+  .appointment-form button {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .newsletter > div > div {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .popup {
+    text-align: left;
+  }
+
+  .newsletter > div {
+    padding: 35px 0;
+  }
+
+  .linear-purple.contact-form .flex.justify-between {
+    flex-wrap: wrap;
+  }
+
+  .banner-bubble_ser {
+    display: none;
+  }
+
+  .services {
+    display: flex;
+    padding: 0 0;
+    flex-wrap: wrap;
+  }
+
+  .linear-purple.contact-form .flex.justify-between h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 18px;
+  }
+  .footer-box {
+    padding: 0 1rem;
   }
 }

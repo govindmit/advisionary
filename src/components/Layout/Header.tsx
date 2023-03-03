@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className="relative w-full z-40">
       <div className={`nc-MainNav2 relative z-10 ${"onTop "}`}>
-        <div className="pl-[3rem] pr-[3rem] py-5 relative flex items-center justify-between space-x-4 xl:space-x-8">
+        <div className="px-4 lg:pl-[3rem] lg:pr-[3rem] py-5 relative flex items-center justify-between space-x-4 xl:space-x-8">
           <div className="flex items-center">
             <Logo className="mr-10" />
             <div className="hidden sm:block h-6 border-l border-neutral-300 dark:border-neutral-800 px-5"></div>

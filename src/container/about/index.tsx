@@ -39,17 +39,22 @@ class About extends React.Component<
   render() {
     return (
       <div
-        style={{ backgroundImage: "url(/bg.png)" }}
+        style={{
+          background:
+            "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.6) 35%, rgba(49,36,77,0.6) 72%, rgba(0, 0, 0,1) 100%)",
+        }}
         className={`nc-AboutPage h-full `}
         data-nc-id="AboutPage"
       >
         <Header />
-        <section style={{ height: "328.5px" }}>
-          <div className="px-[12rem] py-[50px] relative overflow-hidden">
+        <section style={{}}>
+          <div className="xl:px-[3rem] 2xl:px-[7.875rem] xl:py-[50px] relative overflow-hidden">
             <div className="flex mt-12">
               <div>
-                <h1 className="text-7xl font-bold text-[#fff]">We Make</h1>
-                <h1 className="text-7xl font-bold text-[#9B7Ae4]">
+                <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
+                  We Make
+                </h1>
+                <h1 className="text-5xl xl:text-7xl font-bold text-[#9B7Ae4]">
                   Compliance Easy
                 </h1>
               </div>
@@ -57,7 +62,7 @@ class About extends React.Component<
           </div>
         </section>
         <section style={{ height: "525.5px" }}>
-          <div className="px-[7.875rem] py-[50px] mb-[12.5rem]">
+          <div className="xl:px-[7.875rem] py-[50px] mb-[12.5rem]">
             <div className="linear-purple rounded-lg relative  overflow-hidden w-[100%] h-[437px] px-24 py-16">
               <img src="/images/h1_quotes.svg" className="h1_quotes" />
               <img
@@ -117,11 +122,11 @@ class About extends React.Component<
                   Compliance as a service{" "}
                 </span>
               </div>
-              <div className="mt-12 flex justify-between ">
-                <div className="flex flex-col mr-16 w-1/4">
+              <div className="mt-12 flex justify-between flex-wrap xl:flex-nowrap">
+                <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
                   <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
-                      src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/business-man-cartoon-character-young-handsome-vector-14427939-removebg-preview.png"
+                      src="/images/Arthur.png"
                       alt="user"
                       className="dummy_user"
                     />
@@ -187,7 +192,7 @@ class About extends React.Component<
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col mr-16 w-1/4">
+                <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
                   <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"
@@ -242,7 +247,7 @@ class About extends React.Component<
                     )}
                   </p>
                 </div>
-                <div className="flex flex-col mr-16 w-1/4">
+                <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
                   <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"
@@ -303,7 +308,7 @@ class About extends React.Component<
                     )}
                   </p>
                 </div>
-                <div className="flex flex-col w-1/4">
+                <div className="flex flex-col w-full xl:w-1/4">
                   <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"

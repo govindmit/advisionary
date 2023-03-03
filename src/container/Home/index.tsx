@@ -50,7 +50,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
       >
         <Header />
         <div className="px-50 hero-banner relative">
-          <div className="w-2/3">
+          <div className="w-full xl:w-2/3">
             <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#fff]">
               Compliance Solutions
             </h1>
@@ -69,8 +69,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               the unique needs of our clients and stay up-to-date with the
               latest developments in the compliance field. Whether you are a
               start-up or an established business, we are here to listen to your
-              ideas, ensure all your projects are complying with regulations,{" "}
-              <br></br>and support you on your journey to success.
+              ideas, ensure all your projects are complying with regulations,
+              and support you on your journey to success.
             </p>
 
             <ButtonPrimary className="mt-10 px-8 font-hellix-light">
@@ -88,7 +88,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
             "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
         }}
       >
-        <div className="px-32 pb-[96px]">
+        <div className="xl:px-12 2xl:px-32">
           <div className="flex w-full pt-20 flex-wrap">
             <div className="w-96">
               <div className="pb-2">
@@ -212,8 +212,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section> */}
-      <section className="linear-purple">
-        <div className="p-24 px-32">
+      <section className="linear-purple contact-form">
+        <div className="p-24 xl:px-12 2xl:px-32">
           <div className="flex justify-between">
             <div>
               <div className="pb-2">
@@ -262,8 +262,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section>
-      <section className="">
-        <div className="p-20 px-32 flex items-center">
+      <section className="newsletter">
+        <div className="p-20 xl:px-12 2xl:px-32 flex items-center flex-wrap xl:flex-nowrap">
           <div className="w-1/2">
             <h2 className="text-[#fff] font-bold text-6xl">Newsletter</h2>
             <p className="text-white font-light mt-4 font-hellix-light">
@@ -272,7 +272,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               ever since the 1500s, when an unknown printer
             </p>
           </div>
-          <div className="w-1/2 text-right">
+          <div className=" mb-4 w-1/2 text-right">
             <Popup />
           </div>
         </div>

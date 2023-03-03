@@ -29,27 +29,34 @@ function Popup() {
 const Contact: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
-      style={{ backgroundImage: "url(/bg.png)" }}
+      style={{
+        background:
+          "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.6) 35%, rgba(49,36,77,0.6) 72%, rgba(0, 0, 0,1) 100%)",
+      }}
       className={`nc-ContactPage h-full ${className}`}
       data-nc-id="ContactPage"
     >
       <Header />
       <section>
         {/* style={{ height: "50vh" }} */}
-        <div className="px-[7.875rem] py-[50px] relative overflow-hidden">
+        <div className="xl:px-[3rem] 2xl:px-[7.875rem] xl:py-[50px] relative overflow-hidden">
           <div className="flex mt-12">
             <div>
-              <h1 className="text-7xl font-bold text-[#fff]">Let's Speak</h1>
-              <h1 className="text-7xl font-bold text-[#4B8CCB]">Together</h1>
+              <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
+                Let's Speak
+              </h1>
+              <h1 className="text-5xl xl:text-7xl font-bold text-[#9B7Ae4]">
+                Together
+              </h1>
             </div>
           </div>
           <img src="/images/bubble.svg" className="banner-bubble_ser" />
         </div>
       </section>
       <section className="mb-16">
-        <div className="container px-[7.875rem] py-[50px]">
-          <div className="flex justify-between">
-            <div className="basis-[60%]">
+        <div className="container xl:px-[3rem] 2xl:px-[7.875rem] py-[50px]">
+          <div className="flex justify-between flex-wrap xl:flex-nowrap">
+            <div className="xl:basis-[60%]">
               <p className="text-[#fff] text-xl font-normal font-hellix mb-4 ml-[10px]">
                 If you want to optimise or outsource your compliance department,
                 you’re in the right place.
@@ -126,8 +133,8 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
         </div>
       </section>
       <section className="">
-        <div className="p-20 px-32 flex items-center">
-          <div className="w-1/2">
+        <div className="xl:px-[3rem] xl:p-[3rem] 2xl:p-20 2xl:px-32 flex flex-wrap xl:flex-nowrap items-center">
+          <div className="xl:w-1/2">
             <h2 className="text-[#fff] font-bold text-6xl">Newsletter</h2>
             <p className="text-white font-light mt-4 font-hellix-light">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -135,7 +142,7 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
               ever since the 1500s, when an unknown printer
             </p>
           </div>
-          <div className="w-1/2 text-right">
+          <div className="mt-4  mb-4 w-1/2 text-right">
             <Popup />
           </div>
         </div>

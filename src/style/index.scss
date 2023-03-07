@@ -2,7 +2,7 @@
   color: red !important;
 }
 .ttnc-ButtonPrimary {
-  background: linear-gradient(100.69deg, #9b7ae4 -1.65%, #7b53e3 118.12%);
+  background: linear-gradient(100.69deg, #702172 -1.65%, #7b53e3 118.12%);
   transition: opacity 0.2s ease;
 }
 .ttnc-ButtonPrimary:hover {
@@ -12,33 +12,33 @@
 .linear-purple {
   background: linear-gradient(
     128deg,
-    rgba(90, 74, 177, 1) 0%,
+    rgb(118, 9, 151) 0%,
+    rgba(155, 122, 228, 1) 100%
+  );
+}
+
+.services.mb-12 .container.m-auto > div:hover {
+  background: linear-gradient(
+    128deg,
+    rgb(118, 9, 151) 0%,
     rgba(155, 122, 228, 1) 100%
   );
 }
 
 .main-grad {
-  background: #000
-    linear-gradient(
-      90deg,
-      rgb(0, 0, 0) 0%,
-      rgba(16, 29, 66, 0.5) 35%,
-      rgba(49, 36, 77, 0.5) 65%,
-      rgb(0, 0, 0) 100%
-    )
-    center center;
+  background: url(../../public/images/banner-bg.jpg) no-repeat 0 0;
 }
 
-.multi-accordion {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-}
-.btn_image {
-  width: 50%;
-  margin-top: 150px;
-  min-height: 530px;
-}
+// .multi-accordion {
+//   display: flex;
+//   align-items: flex-start;
+//   width: 100%;
+// }
+// .btn_image {
+//   width: 50%;
+//   margin-top: 150px;
+//   min-height: 530px;
+// }
 
 .btn_title {
   margin-top: 25px;
@@ -52,46 +52,68 @@
   width: 100px;
   height: 100px;
   display: inline-block;
-  background: #fff;
+  background: none;
   border-radius: 100%;
-  border: 3px solid;
+  border: 3px solid #fff;
   box-sizing: border-box;
   text-align: center;
   line-height: 100px;
   padding: 0;
   margin: 0;
+  box-shadow: 0 0 8px #fff;
+  overflow: hidden;
+}
+
+.btn_image .multi-accordion-header.active {
+  height: 100px;
+  animation: glower 20s linear infinite;
+  background: #fff;
+}
+.btn_image.relative span > div:hover {
+  animation: glower 20s linear infinite;
 }
 .btn_image.relative span > div.box-1 {
-  right: -100px;
-  top: 51px;
-  border-color: #ba0826;
+  right: auto;
+  top: -94px;
+  left: 50px;
 }
 .btn_image.relative span > div.box-2 {
-  right: -100px;
-  top: 220px;
-  border-color: #ff761a;
+  right: 59px;
+  top: -94px;
+}
+
+.btn_title .multi-accordion-content {
+  text-align: left;
+  padding: 0 35px;
+}
+.btn_title .multi-accordion-content h2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0px;
 }
 
 .btn_image.relative span > div.box-3 {
-  right: -34px;
-  top: auto;
-  border-color: #293972;
-  bottom: -90px;
+  right: -111px;
+  top: 80px;
+
+  bottom: auto;
 }
 .btn_image.relative span > div.box-0 {
-  right: -22px;
-  top: -100px;
+  right: auto;
+  top: 80px;
   text-align: center;
   line-height: 100px;
   padding: 0;
   margin: 0;
-  border-color: #15ccea;
+
+  left: -110px;
 }
 .btn_image .multi-accordion-header.flex.justify-between h2 {
   padding: 0;
   line-height: 55px;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 
 .btn_image.relative span > div > div {
@@ -99,10 +121,12 @@
   display: inline-block;
 }
 
-.btn_title {
-  width: 60%;
-  padding-left: 35px;
-}
+// .btn_title {
+//   width: 60%;
+//   padding-left: 35px;
+//   position: relative;
+//   z-index: 1;
+// }
 .nc-HomePage {
   overflow: hidden;
 
@@ -157,8 +181,8 @@
 .appointment-form input {
   // background: rgba(255, 255, 255, 0.13);
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.13);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
   padding: 15px;
   margin: 10px;
   width: 100%;
@@ -167,8 +191,8 @@
 .appointment-form textarea {
   // background: rgba(255, 255, 255, 0.13);
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.13);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
   padding: 15px;
   margin: 10px;
   width: 100%;
@@ -176,31 +200,31 @@
 }
 
 .btn_image.relative span {
-  width: 380px;
+  width: 470px;
   display: inline-block;
   position: relative;
 }
 .btn_image.relative span img {
-  width: 380px;
+  width: 470px;
 }
 
 .appointment-form button {
-  background: white;
+  background: linear-gradient(100.69deg, #702172 -1.65%, #7b53e3 118.12%);
   width: 100%;
   padding: 15px;
   text-transform: capitalize;
   outline: none;
-  color: #4b8ccb;
+  color: #fff;
 }
 input.placeholder-color::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ffffff87;
+  color: #000;
   opacity: 1; /* Firefox */
   font-family: "Hellix Light";
 }
 textarea.placeholder-color::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ffffff87;
+  color: #000;
   opacity: 1; /* Firefox */
   font-family: "Hellix Light";
 }
@@ -288,11 +312,7 @@ textarea.placeholder-color::placeholder {
   left: 15px;
 }
 .contact_submit_btn {
-  background: linear-gradient(
-    128deg,
-    rgba(90, 74, 177, 1) 0%,
-    rgba(155, 122, 228, 1) 100%
-  ) !important;
+  background: linear-gradient(100.69deg, #702172 -1.65%, #7b53e3 118.12%);
 }
 .bg-modal {
   background-color: #ffffff17;
@@ -386,10 +406,10 @@ textarea.placeholder-color::placeholder {
       line-height: 110.02px;
 
       span {
-        color: #9b7ae4;
-        -webkit-text-fill-color: #9b7ae4;
+        color: #fff;
+        -webkit-text-fill-color: #fff;
         -webkit-text-stroke-width: 0.887934px;
-        -webkit-text-stroke-color: rgba(255, 255, 255, 0.38);
+        -webkit-text-stroke-color: rgba(255, 255, 255, 1);
       }
     }
   }
@@ -406,6 +426,25 @@ textarea.placeholder-color::placeholder {
 }
 .services .container.m-auto > div {
   height: 100%;
+}
+
+.multi-acc-image-box {
+  width: calc(100% - 35rem);
+  text-align: center;
+}
+
+@keyframes glower {
+  0% {
+    box-shadow: 0 0 0px #fff, -0px 0 10px #f0f, -3px 0 10px #0ff;
+  }
+
+  50% {
+    box-shadow: 0 0 0px #fff, -0px 0 10px #0ff, -3px 0 10px #f0f;
+  }
+
+  100% {
+    box-shadow: 0 0 0px #fff, -0px 0 10px #f0f, -3px 0 10px #0ff;
+  }
 }
 
 @media (max-width: 1400px) {

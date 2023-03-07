@@ -34,16 +34,14 @@ const Home: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
       style={{
-        background:
-          "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.2) 72%, rgba(0, 0, 0,1) 100%)",
+        background: "url(/images/banner-bg.jpg) no-repeat 0 0",
       }}
       className={`nc-HomePage h-full ${className}`}
       data-nc-id="HomePage"
     >
       <div
         style={{
-          background:
-            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
+          // background: "url(/images/banner-bg.jpg) no-repeat 0 0",
           backgroundPosition: "left",
           height: "100vh",
         }}
@@ -54,12 +52,12 @@ const Home: FC<PageHomeProps> = ({ className }) => {
             <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#fff]">
               Compliance Solutions
             </h1>
-            <h1 className="xl:text-6xl 2xl:text-7xl font-bold text-[#9B7Ae4] mb-3">
+            <h1 className="xl:text-4xl 2xl:text-5xl font-bold text-[#702172] mb-3">
               Putting You in Control
             </h1>
             <p
               className='text-[#ccc] "'
-              style={{ fontSize: "18px", lineHeight: "34px" }}
+              style={{ fontSize: "17px", lineHeight: "34px" }}
             >
               Advisionary is a compliance consultancy firm that helps businesses
               in the payments, e-money, and crypto sectors ensure compliance
@@ -77,37 +75,31 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               Get in touch
             </ButtonPrimary>
           </div>
-          <img src="/images/bubble.svg" className="banner-bubble" />
+          <img src="/images/bubble.svg" className="banner-bubble opacity-40" />
           <img src="/images/purple.png" className="banner-grad" />
         </div>
       </div>
       <section
         className="what-we-do-section bg-black"
         style={{
-          background:
-            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.3) 35%, rgba(49,36,77,0.3) 65%, rgba(0, 0, 0,1) 100%)",
+          background: "none",
         }}
       >
-        <div className="xl:px-12 2xl:px-32">
-          <div className="flex w-full pt-20 flex-wrap">
-            <div className="w-96">
-              <div className="pb-2">
-                <span className="text-[#FFFFFF] font-hellix-light">
-                  Our Approach
-                </span>
-              </div>
-              <h2 className="text-[#FFFFFF] font-bold text-6xl">
-                The Risk base approach
-              </h2>
-            </div>
-            <div className="w-full flex mt-8">
-              <div className="w-full">
+        <div className="xl:px-12 2xl:px-32 h-[100vh]">
+          <div className="flex w-full  ">
+            <div className="w-full mt-8">
+              <div className="w-full relative">
                 <Multiacc />
+                {/* <img
+                  src="/images/purple.png"
+                  className="banner-grad"
+                  style={{ right: "-500px", top: "-200px", width: "90%" }}
+                /> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="what-we-do-bottom-bg-img-wrapper bg-[#eee] pt-[60px]">
+        <div className="what-we-do-bottom-bg-img-wrapper linear-purple pt-[60px] mt-[80px]">
           <Marquee gradient={false} speed={60} direction={"right"}>
             <div>
               <h1 className="text-white text-7xl text-[76px]">
@@ -212,7 +204,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section> */}
-      <section className="linear-purple contact-form">
+      <section className=" contact-form">
         <div className="p-24 xl:px-12 2xl:px-32">
           <div className="flex justify-between">
             <div>
@@ -262,14 +254,12 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section>
-      <section className="newsletter">
+      <section className="newsletter linear-purple">
         <div className="p-20 xl:px-12 2xl:px-32 flex items-center flex-wrap xl:flex-nowrap">
           <div className="w-1/2">
             <h2 className="text-[#fff] font-bold text-6xl">Newsletter</h2>
             <p className="text-white font-light mt-4 font-hellix-light">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer
+              Subscribe to our newsletter for weekly exclusive content
             </p>
           </div>
           <div className=" mb-4 w-1/2 text-right">

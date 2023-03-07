@@ -20,12 +20,9 @@ const Service: FC<PageHomeProps> = ({ className }) => {
               <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
                 Solution{" "}
               </h1>
-              <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
-                Compliance
-              </h1>
-              <h1 className="text-5xl xl:text-7xl font-bold text-[#9B7Ae4] mb-6">
-                Solution
-              </h1>
+              <h2 className="text-3xl xl:text-5xl font-bold text-[#702172]">
+                Focus on your goals
+              </h2>
             </div>
           </div>
           <img src="/images/bubble.svg" className="banner-bubble_ser" />

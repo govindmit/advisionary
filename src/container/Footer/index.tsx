@@ -8,7 +8,7 @@ export default function Footer() {
         className="xl:px-12 2xl:px-[7.875rem] py-[50px] flex flex-col"
         style={{
           background:
-            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66, 0.3) 35%, rgba(49, 36, 77, 0.3) 65%, rgb(0, 0, 0) 100%)",
+            "linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66, 0.2) 35%, rgba(49, 36, 77, 0.2) 65%, rgb(0, 0, 0) 100%)",
         }}
       >
         <div className="flex flex-col">

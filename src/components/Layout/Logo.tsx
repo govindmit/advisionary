@@ -11,9 +11,10 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
     <Link
       to="/"
-      className={`ttnc-logo inline-block text-primary-6000 ${className}`}
+      className={`ttnc-logo inline-block text-white text-4xl ${className}`}
     >
-      <img className={`block max-h-12`} src="/logo.svg" alt="Logo" />
+      {/* <img className={`block max-h-12`} src="/logo.svg" alt="Logo" /> */}
+      advisiory
     </Link>
   );
 };

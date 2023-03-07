@@ -30,8 +30,7 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
       style={{
-        background:
-          "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.6) 35%, rgba(49,36,77,0.6) 72%, rgba(0, 0, 0,1) 100%)",
+        background: "url(/images/banner-bg.jpg) no-repeat 0 0",
       }}
       className={`nc-ContactPage h-full ${className}`}
       data-nc-id="ContactPage"
@@ -43,10 +42,10 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
           <div className="flex mt-12">
             <div>
               <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
-                Let's Speak
+                Let's Talk
               </h1>
-              <h1 className="text-5xl xl:text-7xl font-bold text-[#9B7Ae4]">
-                Together
+              <h1 className="text-5xl xl:text-7xl font-bold text-[#702172]">
+                Further
               </h1>
             </div>
           </div>
@@ -137,9 +136,7 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
           <div className="xl:w-1/2">
             <h2 className="text-[#fff] font-bold text-6xl">Newsletter</h2>
             <p className="text-white font-light mt-4 font-hellix-light">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer
+              Subscribe to our newsletter for weekly exclusive content
             </p>
           </div>
           <div className="mt-4  mb-4 w-1/2 text-right">

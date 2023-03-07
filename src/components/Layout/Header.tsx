@@ -34,7 +34,7 @@ const NavMenuItem = ({ menu, path, className = "" }) => {
     <li className="menu-item">
       <NavLink
         rel="noopener noreferrer"
-        className={`inline-flex items-center text-sm xl:text-base font-normal text-white py-2 px-4 xl:px-5 rounded-full hover:text-[#5A4AB1] ${className}`}
+        className={`inline-flex items-center text-sm xl:text-base font-normal text-white py-2 px-4 xl:px-5 rounded-full hover:text-[#702172] ${className}`}
         to={{
           pathname: path,
         }}

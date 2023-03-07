@@ -40,8 +40,7 @@ class About extends React.Component<
     return (
       <div
         style={{
-          background:
-            "#000 linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16, 29, 66,0.6) 35%, rgba(49,36,77,0.6) 72%, rgba(0, 0, 0,1) 100%)",
+          background: "url(/images/banner-bg.jpg) no-repeat 0 0",
         }}
         className={`nc-AboutPage h-full `}
         data-nc-id="AboutPage"
@@ -54,7 +53,7 @@ class About extends React.Component<
                 <h1 className="text-5xl xl:text-7xl font-bold text-[#fff]">
                   We Make
                 </h1>
-                <h1 className="text-5xl xl:text-7xl font-bold text-[#9B7Ae4]">
+                <h1 className="text-5xl xl:text-7xl font-bold text-[#702172]">
                   Compliance Easy
                 </h1>
               </div>

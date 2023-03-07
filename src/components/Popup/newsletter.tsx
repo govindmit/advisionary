@@ -85,13 +85,17 @@ const CustomForm = ({ status, message, onValidated }) => {
       <br />
       <button
         style={{
-          fontSize: "18px",
+          fontSize: "16px",
           padding: 5,
-          background: "#7b53e3",
+          fontWeight: "600",
+          background:
+            "linear-gradient(100.69deg, #702172 -1.65%, #7b53e3 118.12%)",
           color: "#fff",
           width: "150px",
           height: "50px",
           marginTop: "15px",
+          borderRadius: "30px",
+          fontFamily: "Hellix Light",
         }}
         onClick={submit}
       >
@@ -109,7 +113,7 @@ function PopupContent({ onClose }) {
     >
       <div className="max-w-lg w-full m-auto bg-white absolute left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4 p-4 rounded-md text-left">
         <span className="flex justify-between mb-5">
-          <h2 className="text-2xl font-bold text-[#7b53e3]">
+          <h2 className="text-2xl font-bold text-[#702172]">
             Newsletter Subscribe
           </h2>
           <button onClick={onClose}>X</button>

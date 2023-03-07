@@ -85,7 +85,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           background: "none",
         }}
       >
-        <div className="xl:px-12 2xl:px-32 h-[100vh]">
+        <div className="xl:px-12 2xl:px-32 min-h-[100vh]">
           <div className="flex w-full  ">
             <div className="w-full mt-8">
               <div className="w-full relative">

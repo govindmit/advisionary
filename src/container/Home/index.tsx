@@ -89,6 +89,23 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           <div className="flex w-full  ">
             <div className="w-full mt-8">
               <div className="w-full relative">
+                <div className="pb-2">
+                  <span className="text-[#FFFFFF] font-hellix-light text-xl pb-4 inline-block mt-8">
+                    Our Approach
+                  </span>
+                  <p className="text-[#ccc] text-lg font-hellix-light">
+                    Advisionary is your go-to source for compliance solutions in
+                    the payments, e-money, and crypto sectors. Our team of
+                    experienced professionals includes consultants,
+                    entrepreneurs, lawyers, and former in-house compliance
+                    experts, and we offer a range of tailor-made tools and
+                    services, as well as automated solutions, to help businesses
+                    in these sectors ensure compliance with relevant laws and
+                    regulations. With Advisionary, you can level up your
+                    compliance efforts and protect your business from potential
+                    risks.
+                  </p>
+                </div>
                 <Multiacc />
                 {/* <img
                   src="/images/purple.png"

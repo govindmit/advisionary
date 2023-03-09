@@ -60,45 +60,23 @@ class About extends React.Component<
             </div>
           </div>
         </section>
-        <section style={{ height: "525.5px" }}>
-          <div className="xl:px-[7.875rem] py-[50px] mb-[12.5rem]">
-            <div className="linear-purple rounded-lg relative  overflow-hidden w-[100%] h-[437px] px-24 py-16">
-              <img src="/images/h1_quotes.svg" className="h1_quotes" />
-              <img
-                src="/images/image_sm_black_circle.svg"
-                className="sm_black_circle"
-              />
-              <img
-                src="/images/image_big_black_circle.svg"
-                className="big_black_circle"
-              />
-              <img
-                src="/images/image_sm_white_circle.svg"
-                className="sm_white_circle"
-              />
-              <img
-                src="/images/image_big_black_circle_vector.svg"
-                className="big_black_circle_vector"
-              />
+        <section>
+          <div className="xl:px-[7.875rem] py-[00px] ">
+            <div className="">
               <div className="flex flex-col pr-16">
-                <div className="mb-4">
-                  <span className="text-[3.875rem] font-bold text-[#fff] ">
-                    Our Story
-                  </span>
-                </div>
                 <div>
                   <span
                     style={{ letterSpacing: "1px", fontWeight: "100" }}
-                    className="text-[#ffffff] w-[510px] block mb-8 font-hellix-light"
+                    className="text-[#ffffff]  text-xl block mb-8 font-hellix-light"
                   >
-                    So here we would like to have a presentation of the team,
-                    however we are still debating internally if we do Avatars or
-                    not, cause not everyone within our team wants to have their
-                    pictures on their website, but we can start with text to
-                    introduce our team, and you can find it below: (if you have
-                    ideas, or if you have previous inspirations from other
-                    projects you done to present the team on a website, I’m all
-                    ears!)
+                    Introducing our team of experts who are dedicated to
+                    providing top-notch services in their respective fields. Our
+                    team comprises highly skilled and experienced professionals
+                    who possess deep knowledge and expertise in their areas.
+                    They work collaboratively to offer innovative solutions and
+                    customised services to meet the unique needs of our clients.
+                    Our goal is to provide our clients with the best possible
+                    experience.
                   </span>
                 </div>
               </div>
@@ -106,9 +84,9 @@ class About extends React.Component<
           </div>
         </section>
         <section className="relative overflow-hidden">
-          <img src="/images/image_303.svg" className="bg-service" />
+          {/* <img src="/images/image_303.svg" className="bg-service" /> */}
 
-          <div className="container  py-[50px] relative m-auto">
+          <div className=" xl:px-[3rem] 2xl:px-[7.875rem] py-[50px] relative m-auto">
             <img src="/images/rectangle_2.svg" className="rectangle_two" />
             <div className=" rounded-md px-3 pt-12 py-20">
               <div>

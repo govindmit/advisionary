@@ -24,6 +24,16 @@ const Service: FC<PageHomeProps> = ({ className }) => {
               <h2 className="text-3xl xl:text-5xl font-bold text-[#702172]">
                 Focus on your goals
               </h2>
+              <p className="text-[#ccc] mt-5 text-lg font-hellix-light">
+                At Advisionary, we understand that every business has different
+                compliance needs. That's why we offer a range of services to
+                meet the unique needs of our clients. To make it easier for
+                businesses to access the support they need, we have created four
+                packages to choose from: Basic, Standard, Premium, and Custom.
+                Whether you are a start-up just getting started or an
+                established business looking to improve your compliance efforts,
+                we have a package that is right for you
+              </p>
             </div>
           </div>
         </div>
@@ -31,7 +41,7 @@ const Service: FC<PageHomeProps> = ({ className }) => {
       <div className="services mb-12">
         <section className="relative overflow-hidden">
           <div className="container m-auto  ">
-            <div className="linear-purple rounded-lg relative  overflow-hidden w-full  px-6 py-6">
+            <div className="bg-[#111] rounded-lg relative  overflow-hidden w-full  px-6 py-6">
               <div className="flex flex-col">
                 <span className="leading-[142% text-[#fff] font-medium text-lg font-hellix-light w-full mb-3">
                   PACKAGE 1

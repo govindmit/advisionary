@@ -8,13 +8,10 @@ const MultiAccordion = ({ data }) => {
   };
 
   return (
-    <div className="multi-accordion flex mt-[10rem]">
+    <div className="multi-accordion flex mt-[5rem]">
       <div className="w-[35rem]">
-        <div className="pb-2">
-          <span className="text-[#FFFFFF] font-hellix-light">Our Approach</span>
-        </div>
         <h2 className="text-[#FFFFFF] font-bold text-6xl">
-          The Risk base approach
+          The Risk based approach
         </h2>
         <div className="btn_title">
           {data.map((item, index) => {

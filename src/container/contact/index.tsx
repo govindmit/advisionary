@@ -30,7 +30,7 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
       style={{
-        background: "url(/images/banner-bg.jpg) no-repeat 0 0",
+        background: "url(/images/bg-inner.jpg) no-repeat 0 0 / cover",
       }}
       className={`nc-ContactPage h-full ${className}`}
       data-nc-id="ContactPage"
@@ -49,7 +49,6 @@ const Contact: FC<PageHomeProps> = ({ className }) => {
               </h1>
             </div>
           </div>
-          <img src="/images/bubble.svg" className="banner-bubble_ser" />
         </div>
       </section>
       <section className="mb-16">

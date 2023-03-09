@@ -40,7 +40,7 @@ class About extends React.Component<
     return (
       <div
         style={{
-          background: "url(/images/banner-bg.jpg) no-repeat 0 0",
+          background: "url(/images/bg-inner.jpg) no-repeat 0 0 / cover",
         }}
         className={`nc-AboutPage h-full `}
         data-nc-id="AboutPage"
@@ -123,16 +123,16 @@ class About extends React.Component<
               </div>
               <div className="mt-12 flex justify-between flex-wrap xl:flex-nowrap">
                 <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
-                  <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
+                  {/* <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="/images/Arthur.png"
                       alt="user"
                       className="dummy_user"
-                    />
-                    {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
+                    /> */}
+                  {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/insta.png" alt="user" className='insta_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/behance.png" alt="user" className='behance_logo' /></a> */}
-                  </div>
+                  {/* </div> */}
 
                   <div>
                     <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light mb-3">
@@ -192,16 +192,16 @@ class About extends React.Component<
                   </div>
                 </div>
                 <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
-                  <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
+                  {/* <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"
                       alt="user"
                       className="dummy_user"
-                    />
-                    {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
+                    /> */}
+                  {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/insta.png" alt="user" className='insta_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/behance.png" alt="user" className='behance_logo' /></a> */}
-                  </div>
+                  {/* </div> */}
 
                   <div>
                     <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light mb-3">
@@ -247,16 +247,16 @@ class About extends React.Component<
                   </p>
                 </div>
                 <div className="flex flex-col xl:mr-16 w-full xl:w-1/4">
-                  <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
+                  {/* <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"
                       alt="user"
                       className="dummy_user"
-                    />
-                    {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
+                    /> */}
+                  {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/insta.png" alt="user" className='insta_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/behance.png" alt="user" className='behance_logo' /></a> */}
-                  </div>
+                  {/* </div> */}
 
                   <div>
                     <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light mb-3">
@@ -308,16 +308,16 @@ class About extends React.Component<
                   </p>
                 </div>
                 <div className="flex flex-col w-full xl:w-1/4">
-                  <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
+                  {/* <div className="mb-6 px-5 pt-10 pb-0 relative team basis-1/3">
                     <img
                       src="https://raw.githubusercontent.com/AkashPalve/Arbor-Email-Signature/main/face-expression-beautiful-woman-with-brown-hair-vector-26565372-removebg-preview.png"
                       alt="user"
                       className="dummy_user"
-                    />
-                    {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
+                    /> */}
+                  {/* <a href="#" target={'_blank'}><img src="/images/linkedin.png" alt="user" className='linkedin_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/insta.png" alt="user" className='insta_logo' /></a>
                                         <a href="#" target={'_blank'}><img src="/images/behance.png" alt="user" className='behance_logo' /></a> */}
-                  </div>
+                  {/* </div> */}
 
                   <div>
                     <span className="leading-[156%] text-[#ffffff75] max-w-md-[297px] inline-block font-hellix-light mb-3">

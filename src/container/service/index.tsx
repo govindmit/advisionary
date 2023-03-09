@@ -9,7 +9,8 @@ export interface PageHomeProps {
 const Service: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
-      className={`nc-ServicePage h-full ${className} main-grad`}
+      className={`nc-ServicePage h-full ${className} `}
+      style={{ background: "url(/images/bg-inner.jpg) no-repeat 0 0 / cover" }}
       data-nc-id="ServicePage"
     >
       <Header />
@@ -25,7 +26,6 @@ const Service: FC<PageHomeProps> = ({ className }) => {
               </h2>
             </div>
           </div>
-          <img src="/images/bubble.svg" className="banner-bubble_ser" />
         </div>
       </section>
       <div className="services mb-12">

@@ -8,7 +8,7 @@ const MultiAccordion = ({ data }) => {
   };
 
   return (
-    <div className="multi-accordion flex items-center">
+    <div className="multi-accordion flex mt-[10rem]">
       <div className="w-[35rem]">
         <div className="pb-2">
           <span className="text-[#FFFFFF] font-hellix-light">Our Approach</span>
@@ -31,7 +31,7 @@ const MultiAccordion = ({ data }) => {
                   onClick={() => handleClick(index)}
                 >
                   <h2 className="mb-5 text-[#717171] text-2xl xl:text-3xl mt-2 mb-2 pb-2 pt-2 cursor-pointer relative hover:text-[#702172]">
-                    {item.title}
+                    <a href={"#" + index}> {item.title} </a>
                   </h2>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const MultiAccordion = ({ data }) => {
                   onClick={() => handleClick(index)}
                 >
                   <h2 className="mb-5 text-[#717171] text-2xl xl:text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
-                    {item.btn}
+                    <a href={"#" + index}> {item.btn} </a>
                   </h2>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const MultiAccordion = ({ data }) => {
           {data.map((item, index) => (
             <div key={index} className="multi-accordion-item ">
               {index === activeIndex && (
-                <div className="multi-accordion-content">
+                <div className="multi-accordion-content" id={index}>
                   <h2 className="mb-5 text-[#717171] text-3xl xl:text-5xl mt-4 mb-4 pb-4 pt-4 cursor-pointer relative hover:text-[#9B7Ae4]">
                     {item.title}
                   </h2>

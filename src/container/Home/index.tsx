@@ -34,14 +34,14 @@ const Home: FC<PageHomeProps> = ({ className }) => {
   return (
     <div
       style={{
-        background: "url(/images/banner-bg.jpg) no-repeat 0 0",
+        background: "url(/images/bg-inner.jpg) no-repeat 0 0 / 100% 100%",
       }}
       className={`nc-HomePage h-full ${className}`}
       data-nc-id="HomePage"
     >
       <div
         style={{
-          // background: "url(/images/banner-bg.jpg) no-repeat 0 0",
+          background: "url(/images/banner-bg.png) no-repeat 0 0 / 100%",
           backgroundPosition: "left",
           height: "100vh",
         }}
@@ -75,8 +75,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
               Get in touch
             </ButtonPrimary>
           </div>
-          <img src="/images/bubble.svg" className="banner-bubble opacity-40" />
-          <img src="/images/purple.png" className="banner-grad" />
+          {/* <img src="/images/bubble.svg" className="banner-bubble opacity-40" />
+          <img src="/images/purple.png" className="banner-grad" /> */}
         </div>
       </div>
       <section
@@ -204,7 +204,7 @@ const Home: FC<PageHomeProps> = ({ className }) => {
           </div>
         </div>
       </section> */}
-      <section className=" contact-form">
+      {/* <section className=" contact-form">
         <div className="p-24 xl:px-12 2xl:px-32">
           <div className="flex justify-between">
             <div>
@@ -253,8 +253,8 @@ const Home: FC<PageHomeProps> = ({ className }) => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="newsletter linear-purple">
+      </section> */}
+      <section className="newsletter ">
         <div className="p-20 xl:px-12 2xl:px-32 flex items-center flex-wrap xl:flex-nowrap">
           <div className="w-1/2">
             <h2 className="text-[#fff] font-bold text-6xl">Newsletter</h2>

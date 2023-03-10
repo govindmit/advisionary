@@ -61,7 +61,7 @@ class About extends React.Component<
           </div>
         </section>
         <section>
-          <div className="xl:px-[7.875rem] py-[00px] ">
+          <div className="xl:px-[3rem]  2xl:px-[7.875rem]  py-[00px] ">
             <div className="">
               <div className="flex flex-col pr-16">
                 <div>

@@ -119,19 +119,19 @@ const Home: FC<PageHomeProps> = ({ className }) => {
         <div className="what-we-do-bottom-bg-img-wrapper linear-purple pt-[60px] mt-[80px]">
           <Marquee gradient={false} speed={60} direction={"right"}>
             <div>
-              <h1 className="text-white text-7xl text-[76px]">
+              <h1 className="text-white text-4xl text-[76px]">
                 &nbsp;&nbsp;&nbsp; We help you to <span>work smarter</span>, not
                 harder.
               </h1>
             </div>
           </Marquee>
-          <Marquee gradient={false} speed={60} direction={"left"}>
+          {/* <Marquee gradient={false} speed={60} direction={"left"}>
             <div>
               <h1 className="text-white text-7xl text-[76px]">
                 Welcome to compliance made easy.
               </h1>
             </div>
-          </Marquee>
+          </Marquee> */}
         </div>
       </section>
       {/* <section className='bg-images-case-studies bg-black pt-[110px]'>

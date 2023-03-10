@@ -109,7 +109,7 @@ function PopupContent({ onClose }) {
   return (
     <div
       className="popup-content fixed top-0 left-0 right-0 bottom-0"
-      style={{ background: "rgba(0, 0, 0, 0.8)" }}
+      style={{ background: "rgba(0, 0, 0, 0.8)", zIndex: "50" }}
     >
       <div className="max-w-lg w-full m-auto bg-white absolute left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4 p-4 rounded-md text-left">
         <span className="flex justify-between mb-5">
